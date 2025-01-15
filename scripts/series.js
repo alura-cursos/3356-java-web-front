@@ -82,7 +82,7 @@ function carregarTopEpisodios() {
 
             const listaHTML = data.map(serie => `
                 <li>
-                    Episódio ${serie.numeroEpisodio} - Temporada ${serie.temporada} - ${serie.titulo}
+                    Episódio ${serie.numeroEpisodio} - Temporada ${serie.temporada} - ${serie.titulo} - Avaliação ${serie.avaliacao}
                 </li>
             `).join('');
             ul.innerHTML = listaHTML;
